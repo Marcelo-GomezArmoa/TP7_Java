@@ -19,8 +19,8 @@ bin/
 *.iml
 *.ipr
 *.iws
-.vscode/settings.json
-.vscode/launch.json
+.vscode/
+.github/
 .project
 .classpath
 .settings/
