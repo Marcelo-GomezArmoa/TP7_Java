@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compilar Java",
+			"type": "shell",
+			"command": "javac",
+			"args": [
+				"-d",
+				"target/classes",
+				"-cp",
+				"src/main/java",
+				"src/main/java/Main.java",
+				"src/main/java/kata1/*.java",
+				"src/main/java/kata2/*.java",
+				"src/main/java/kata3/*.java",
+				"src/main/java/kata4/*.java"
+			],
+			"problemMatcher": [
+				"$javac"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Ejecutar TP7",
+			"type": "shell",
+			"command": "java",
+			"args": [
+				"-cp",
+				"target/classes",
+				"Main"
+			],
+			"group": "test"
+		}
+	]
+}
